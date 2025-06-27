@@ -1,0 +1,9 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
+
+# IDE config (kalau pakai VS Code)
+.vscode/
