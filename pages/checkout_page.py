@@ -8,6 +8,7 @@ class CheckoutPage(BasePage):
     CONTINUE_BUTTON = (By.ID, "continue")
     FINISH_BUTTON = (By.ID, "finish")
     SUCCESS_MESSAGE = (By.CLASS_NAME, "complete-header")
+    ERROR_MESSAGE = (By.CLASS_NAME, "error-message-container")
 
     def fill_checkout_info(self, first, last, postal):
         self.enter_text(self.FIRST_NAME, first)
@@ -20,3 +21,6 @@ class CheckoutPage(BasePage):
 
     def get_success_message(self):
         return self.get_element_text(self.SUCCESS_MESSAGE)
+
+    def get_error_message(self):
+        return self.get_text(self.ERROR_MESSAGE)
