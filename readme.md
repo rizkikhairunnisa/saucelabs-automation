@@ -6,4 +6,6 @@ This is a simple Selenium + Python + POM test framework for https://www.saucedem
 
 ```bash
 pip install -r requirements.txt
+pytest tests\test_checkout_positive.py
+pytest tests\test_checkout_negative.py
 pytest tests/
